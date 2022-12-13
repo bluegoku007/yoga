@@ -1,0 +1,510 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #landing {
+    position: relative;
+    z-index: 1;
+    padding-top: 7.5em;
+    font-size: 14px;
+    margin-bottom: 5em;
+  }
+  #landing h1 {
+    font-size: min(10vw, 3.6em);
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0.671875em;
+  }
+  #landing p {
+    font-size: 0.9em;
+    line-height: 1.52em;
+    letter-spacing: .05em;
+    font-family: 'Raleway', arial, sans-serif;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em;
+    width: 90%;
+    max-width: 25.44444444em;
+  }
+  #landing p:last-of-type {
+    margin-bottom: 0;
+  }
+  #landing picture {
+    display: none;
+  }
+  #landing picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #landing .contact-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 4em;
+    max-width: 27.35em;
+    width: 100%;
+  }
+  #landing .contact-group .group {
+    width: auto;
+    text-align: left;
+  }
+  #landing .contact-group .group .green {
+    font-size: 0.7em;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: .045em;
+    font-weight: bold;
+    font-family: 'Inter', Arial, sans-serif;
+    display: block;
+  }
+  #landing .contact-group .group a {
+    color: #25413B;
+    font-size: 0.9em;
+    line-height: 2em;
+    text-decoration: none;
+  }
+  #landing .contact-group .group a:hover {
+    text-decoration: underline;
+  }
+  #landing .contact-group .group a:nth-of-type(1) {
+    margin-right: 0.55555556em;
+  }
+  #landing .contact-group .group a:nth-of-type(1) img {
+    width: 0.61111111em;
+    height: 0.94444444em;
+  }
+  #landing .contact-group .group a:nth-of-type(2) img {
+    width: 0.88888889em;
+    height: 1.05555556em;
+  }
+  #landing .contact-group .social a {
+    perspective: 700px;
+    display: inline-block;
+  }
+  #landing .contact-group .social a svg {
+    display: inline-block;
+    transition: transform .6s;
+  }
+  #landing .contact-group .social a:hover svg {
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+  }
+  #landing #contact {
+    width: 99%;
+    margin: auto;
+    margin-top: 5em;
+    max-width: 32.75em;
+    background: #CEE3DF;
+    padding: 3.25em 2.75em;
+  }
+  #landing #contact h3 {
+    color: #12211E;
+    font-size: 1.8em;
+    line-height: 1.3em;
+  }
+  #landing #contact label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 1.11111111em;
+    font-weight: bold;
+  }
+  #landing #contact input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    height: 3em;
+    margin-bottom: 1.25em;
+    transition: border .3s;
+    border: 1px solid rgba(93, 162, 148, 0);
+  }
+  #landing #contact input:hover {
+    border: 1px solid rgba(93, 162, 148, 0.5);
+  }
+  #landing #contact textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    min-height: 10em;
+    margin-bottom: 1.25em;
+    transition: border .3s;
+    border: 1px solid rgba(93, 162, 148, 0);
+  }
+  #landing #contact textarea:hover {
+    border: 1px solid rgba(93, 162, 148, 0.5);
+  }
+  #landing #contact button {
+    border: none;
+    text-transform: capitalize;
+    font-size: 0.9em;
+    letter-spacing: .005em;
+  }
+  #landing #contact .form-submit {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 579px) {
+  #landing .container {
+    max-width: 39.5em;
+  }
+  #landing h1 {
+    font-size: min(7vw, 3.6em);
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 48em) {
+  #landing {
+    padding-top: 10.15em;
+    padding-bottom: 2.55em;
+    font-size: min(2vw, 1em);
+  }
+  #landing:before {
+    height: 33.3em;
+    bottom: auto;
+    top: 0;
+  }
+  #landing .container {
+    position: relative;
+    width: 96%;
+    max-width: 70.7em;
+    padding: 0;
+  }
+  #landing h1 {
+    font-size: 3.2em;
+    max-width: 13.640625em;
+  }
+  #landing #contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #landing #contact h3 {
+    display: block;
+    width: 100%;
+  }
+  #landing #contact .fullName {
+    display: block;
+    width: 100%;
+  }
+  #landing #contact .width50 {
+    width: 45%;
+    display: inline-block;
+  }
+  #landing #contact .textarea {
+    width: 100%;
+    display: block;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1200px) {
+  #landing {
+    margin-bottom: 12.5em;
+  }
+  #landing .container {
+    max-width: 70.9em;
+    font-size: min(1.5vw, 1em);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  #landing .content {
+    min-width: 32.75em;
+    width: 32.75em;
+  }
+  #landing .contact-group {
+    margin-left: 0;
+  }
+  #landing picture {
+    display: block;
+    position: relative;
+    width: 32.75em;
+    height: 46.95em;
+    font-size: min(1.2vw, 1em);
+  }
+  #landing picture:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 29.7em;
+    width: 24.25em;
+    background: #CEE3DF;
+    opacity: 1;
+    bottom: -3.5em;
+    right: -2.3em;
+  }
+  #landing h1 {
+    text-align: left;
+    margin-left: 0;
+  }
+  #landing p {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #landing h1 {
+    color: #fff;
+  }
+  body.dark-mode #landing .contact-group .group a {
+    color: #fff;
+  }
+  body.dark-mode #landing .contact-group .group a svg path {
+    fill: #fff;
+  }
+  body.dark-mode #landing #contact {
+    background: var(--darkPrimary);
+  }
+  body.dark-mode #landing #contact h3 {
+    color: #fff;
+  }
+  body.dark-mode #landing #contact label {
+    color: #fff;
+    opacity: .9;
+  }
+  body.dark-mode #landing #contact button {
+    background: #fff;
+    color: var(--darkPrimary);
+  }
+  body.dark-mode #landing #contact button:before {
+    filter: brightness(50%);
+  }
+  body.dark-mode #landing #contact button:hover {
+    color: #fff;
+  }
+}
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #faq {
+    background: #ECE5DF;
+    padding-top: 3.75em;
+    padding-bottom: 3.75em;
+  }
+  #faq .container {
+    width: 96%;
+    max-width: 32.05em;
+    padding: 0;
+  }
+  #faq .faq {
+    width: 100%;
+    max-width: 32.05em;
+    margin: auto;
+  }
+  #faq h2 {
+    color: #413325;
+    max-width: 10.328125em;
+  }
+  #faq .item:last-of-type {
+    margin-bottom: 0em;
+  }
+  #faq .item p {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s, height .3s;
+    padding-left: 2.83333333em;
+  }
+  #faq .item.open button {
+    margin-bottom: 0.95833333em;
+  }
+  #faq .item.open button svg {
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+  #faq .item.open p {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    margin-bottom: 2.77777778em;
+  }
+  #faq button {
+    color: #413325;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Inter', Arial, sans-serif;
+    background: transparent;
+    border: none;
+    text-transform: initial;
+    margin-bottom: 0em;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    text-align: left;
+    height: 4.95833333em;
+    border-top: 1px solid rgba(65, 51, 37, 0.2);
+    width: 100%;
+  }
+  #faq button svg {
+    width: 0.5em;
+    height: 0.83333333em;
+    margin-right: 1.625em;
+    transition: transform .2s;
+  }
+  #faq p {
+    color: #614D38;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #faq {
+    margin-top: -2.4em;
+    padding-top: 7.3em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #faq {
+    padding-bottom: 6.8em;
+    padding-top: 5.9em;
+  }
+  #faq .container {
+    max-width: 70.9em;
+    font-size: min(1.3vw, 1em);
+  }
+  #faq h2 {
+    font-size: 3.2em;
+    width: 8.984375em;
+    text-align: right;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 0.84375em;
+  }
+  #faq .faq {
+    margin: 0;
+    margin-top: 0.9em;
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #faq .item {
+    width: 33.85em;
+    max-width: 33.85em;
+  }
+  #faq .item:nth-of-type(4) button,
+  #faq .item:nth-of-type(8) button {
+    border-bottom: 1px solid rgba(65, 51, 37, 0.2);
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #faq {
+    margin-top: -20em;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #faq {
+    background: #413325;
+  }
+  body.dark-mode #faq h2,
+  body.dark-mode #faq button,
+  body.dark-mode #faq li,
+  body.dark-mode #faq p {
+    color: #ECE5DF;
+  }
+  body.dark-mode #faq button {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  body.dark-mode #faq button:before,
+  body.dark-mode #faq button:after {
+    background: #fff;
+  }
+  body.dark-mode #faq button svg path {
+    fill: #fff;
+  }
+  body.dark-mode #faq .item:nth-of-type(4) button {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    z-index: 1;
+    padding: 3.75em 10px;
+  }
+  #cta:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #383838;
+    opacity: .9;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  #cta h2 {
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 11.453125em;
+    margin-bottom: 0.546875em;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 27.11111111em;
+    margin: auto;
+    margin-bottom: 2.66666667em;
+  }
+  #cta .button-solid {
+    width: 8.88888889em;
+    margin: auto;
+    display: block;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #cta {
+    padding: 5.95em 0;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta h2 {
+    font-size: 3.2em;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #cta {
+    background: url("../images/cta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #cta picture {
+    display: none;
+  }
+}

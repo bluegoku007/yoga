@@ -1,0 +1,169 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #landing {
+    position: relative;
+    z-index: 1;
+    padding-top: 7.5em;
+    font-size: 14px;
+    margin-bottom: 5em;
+  }
+  #landing .brown-box {
+    position: absolute;
+    display: block;
+    height: 53em;
+    width: 100%;
+    background: #ECE5DF;
+    opacity: 1;
+    bottom: 5.5em;
+    left: 0;
+    z-index: -2;
+  }
+  #landing h1 {
+    font-size: min(10vw, 3.6em);
+    margin-bottom: 1.28888889em;
+    filter: drop-shadow(0px 0px 10px #f9f8f4);
+  }
+  #landing h2 {
+    font-size: 1em;
+    line-height: 1.52em;
+    letter-spacing: .05em;
+    font-family: 'Raleway', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 4.33333333em;
+    width: 65%;
+    max-width: 28em;
+  }
+  #landing .landing-image {
+    display: none;
+  }
+  #landing picture {
+    position: absolute;
+    display: block;
+    width: 10.1em;
+    height: 20.25em;
+    z-index: 100;
+    bottom: 0em;
+    right: -2.5em;
+    z-index: -1;
+  }
+  #landing picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media only screen and (min-width: 579px) {
+  #landing picture {
+    font-size: 1vw;
+    width: 30em;
+    height: 89.85em;
+  }
+  #landing h1 {
+    font-size: min(7vw, 3.6em);
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #landing {
+    font-size: inherit;
+    margin-bottom: 4.8em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #landing {
+    padding-top: 14.15em;
+  }
+  #landing .brown-box {
+    height: 33.3em;
+    bottom: auto;
+    top: 0;
+  }
+  #landing .container {
+    max-width: 70.7em;
+    padding: 0;
+  }
+  #landing h1 {
+    font-size: 3.6em;
+    max-width: 11.90277778em;
+    margin-bottom: 0.80555556em;
+  }
+  #landing h2 {
+    font-size: 1.2em;
+    width: 60%;
+    max-width: 30.91666667em;
+  }
+  #landing picture {
+    font-size: inherit;
+    width: 20em;
+    height: 33em;
+    bottom: auto;
+    top: 8.25em;
+  }
+  #landing picture:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 31.65em;
+    width: 31.3em;
+    background: url("../images/leaf.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .15;
+    bottom: -15em;
+    left: -10em;
+    z-index: -100;
+    transform: rotate(-191deg);
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #landing {
+    margin-bottom: 7.2em;
+  }
+  #landing .container {
+    position: relative;
+  }
+  #landing h2 {
+    width: 45%;
+  }
+  #landing picture {
+    right: 0;
+    width: 33em;
+    height: 39.85em;
+    top: -5.9em;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #landing .brown-box {
+    height: 35em;
+  }
+  #landing h2 {
+    width: 55%;
+    margin-bottom: 5em;
+    max-width: 28em;
+    letter-spacing: .005em;
+  }
+  #landing picture:before {
+    left: -13em;
+    bottom: -12.5em;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #landing .brown-box {
+    background: #413325;
+    opacity: .5;
+  }
+  body.dark-mode #landing h1 {
+    color: #fff;
+    filter: none;
+  }
+}
